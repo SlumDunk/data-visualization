@@ -1,4 +1,4 @@
-package com.uncc.visualization;
+package com.uncc.bootstrap;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
