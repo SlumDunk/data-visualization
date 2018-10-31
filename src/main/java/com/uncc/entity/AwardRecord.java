@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AwardRecords {
-    private Integer age;
+public class AwardRecord {
+    private String age;
     private String conference;
     private String date;
     private String draftYear;

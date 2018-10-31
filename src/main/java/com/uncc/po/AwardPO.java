@@ -22,10 +22,12 @@ public class AwardPO {
 
     private Integer playerId;
 
+    private Integer teamId;
+
     private Date awardDate;
 
-    private int seasonAge;
+    private Integer seasonAge;
 
-    private int season;
+    private Integer season;
 
 }

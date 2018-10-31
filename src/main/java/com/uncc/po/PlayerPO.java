@@ -30,6 +30,7 @@ public class PlayerPO {
 
     private Double playerWeight;
 
-    private Integer teamId;
+    private Double bmi;
+
 
 }
