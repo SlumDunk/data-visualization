@@ -1,11 +1,12 @@
-package com.uncc.po;
+package com.uncc.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
 import java.time.Year;
 
 /**
- * player entity for mapping with table awards
+ * player entity for transfering between service layer and controller layer
  *
  * @author zerongliu
  * @description:teamPO
@@ -16,7 +17,8 @@ import java.time.Year;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class PlayerPO {
+@JsonInclude(value = JsonInclude.Include.NON_NULL)
+public class PlayerDTO {
     /**
      * primary key
      */
@@ -26,7 +28,7 @@ public class PlayerPO {
      */
     private String playerName;
     /**
-     * year when enter into nba
+     * the year they enter nba
      */
     private Year playerDraftYear;
     /**
@@ -34,16 +36,15 @@ public class PlayerPO {
      */
     private String playerPosition;
     /**
-     * height information
+     * height
      */
     private Double playerHeight;
-
     /**
-     * wieght information
+     * weight
      */
     private Double playerWeight;
     /**
-     * bmi information
+     * bmi data
      */
     private Double bmi;
 

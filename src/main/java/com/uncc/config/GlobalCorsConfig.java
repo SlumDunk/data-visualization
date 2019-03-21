@@ -5,6 +5,8 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
+ * configuration for cross sites
+ *
  * @Author: zerongliu
  * @Date: 10/30/18 10:35
  * @Description:

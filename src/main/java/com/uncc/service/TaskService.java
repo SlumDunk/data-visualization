@@ -3,6 +3,8 @@ package com.uncc.service;
 import org.springframework.stereotype.Service;
 
 /**
+ * service for parsing csv file and persist data into db
+ *
  * @Author: zerongliu
  * @Date: 10/30/18 16:12
  * @Description:
@@ -10,7 +12,10 @@ import org.springframework.stereotype.Service;
 @Service
 public interface TaskService {
     /**
-     * entity process the data of nba player in the csv file and import them into mysql
+     * process the data of nba player in the csv file and import them into mysql
+     *
+     * @param fileName
+     * @throws Exception
      */
     void processCSV(String fileName) throws Exception;
 }

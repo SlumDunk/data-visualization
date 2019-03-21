@@ -5,6 +5,8 @@ import java.util.Date;
 import lombok.*;
 
 /**
+ * team entity for mapping with table awards
+ *
  * @Author: zerongliu
  * @Date: 10/30/18 10:35
  * @Description:

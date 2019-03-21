@@ -32,10 +32,18 @@ import java.util.Properties;
 @MapperScan(basePackages = "com.uncc.**.mapper")
 @EnableTransactionManagement
 public class DataSourceConfig {
-
+    /**
+     * env provided by spring
+     */
     @Autowired
     private Environment env;
 
+    /**
+     * create data source
+     *
+     * @return
+     * @throws SQLException
+     */
     @Primary
     @Bean
     public DataSource dataSource() throws SQLException {
@@ -52,6 +60,13 @@ public class DataSourceConfig {
         return dataSource;
     }
 
+    /**
+     * configure sql session factory
+     *
+     * @param dataSource
+     * @return
+     * @throws Exception
+     */
     @Bean
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
@@ -86,11 +101,23 @@ public class DataSourceConfig {
         return sqlSessionFactory;
     }
 
+    /**
+     * create sql session template
+     *
+     * @param sqlSessionFactory
+     * @return
+     */
     @Bean
     public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 
+    /**
+     * transaction manager
+     *
+     * @param dataSource
+     * @return
+     */
     @Bean
     public DataSourceTransactionManager transactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);

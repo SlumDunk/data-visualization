@@ -8,7 +8,9 @@ import java.util.*;
  * @Description:
  */
 public interface Constants {
-
+    /**
+     * position map
+     */
     public static final Map<String, String> positionMap = new HashMap<String, String>() {{
         put("PG", "point guard");
         put("SG", "shooting guard");
@@ -23,5 +25,9 @@ public interface Constants {
         put("G-F", "guard forward");
 
     }};
+    /**
+     * color array
+     */
+    public static final String[] colors = new String[]{"red", "orange", "blue", "green", "yellow", "purple", "black"};
 
 }

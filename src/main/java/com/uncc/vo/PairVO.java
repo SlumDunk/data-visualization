@@ -6,19 +6,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * input parameter from clients map into this entity
- *
  * @Author: zerongliu
- * @Date: 10/29/18 22:16
+ * @Date: 11/6/18 16:31
  * @Description:
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class QueryVO {
+public class PairVO {
     /**
-     * name of file
+     * key
      */
-    private String fileName;
+    private Object key;
+    /**
+     * value
+     */
+    private Object value;
+    /**
+     * color
+     */
+    private String color;
 }

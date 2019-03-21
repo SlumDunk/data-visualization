@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
+ * result interface between mapper layer and service layer
+ *
  * @Author: zerongliu
  * @Date: 10/29/18 21:42
  * @Description:
@@ -17,8 +19,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ResultPO {
-
+    /**
+     * headers
+     */
     private List<String> headers;
-
+    /**
+     * data
+     */
     private Object data;
 }

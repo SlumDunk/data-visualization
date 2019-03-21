@@ -8,6 +8,12 @@ import org.apache.commons.lang3.StringUtils;
  * @Description:
  */
 public class CommonUtil {
+    /**
+     * parse height field in csv
+     *
+     * @param sourceHeight
+     * @return
+     */
     public static Double getHeight(String sourceHeight) {
         if (StringUtils.isNoneBlank(sourceHeight)) {
             if (sourceHeight.endsWith("cm")) {
@@ -20,6 +26,12 @@ public class CommonUtil {
         return 0.0;
     }
 
+    /**
+     * parse wieght field in csv
+     *
+     * @param sourceWeight
+     * @return
+     */
     public static Double getWeight(String sourceWeight) {
         if (StringUtils.isNoneBlank(sourceWeight)) {
             if (sourceWeight.endsWith("kg")) {

@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
+ * result interface for service layer and controller layer
+ *
  * @Author: zerongliu
  * @Date: 10/29/18 21:42
  * @Description:
