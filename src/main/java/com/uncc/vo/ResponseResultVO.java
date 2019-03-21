@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * format of interface between clients and server
+ * interface between clients and server
  *
  * @Author: zerongliu
  * @Date: 10/29/18 20:56
